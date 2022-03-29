@@ -1,7 +1,7 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-        # DP array S, where S[j] is the largest contiguous array
-        # sum with
+        # DP array S, where max(S[j]) is the largest contiguous array
+        # sum with first j elements in nums.
         S = [0] * len(nums)
         S[0] = nums[0]
         for i in range(1, len(nums)):
